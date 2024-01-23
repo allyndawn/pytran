@@ -1,0 +1,9 @@
+{
+    "from": {
+        "username": "oldname",
+        "secret": "xxxx"
+    },
+    "to": {
+        "username": "newname"
+    }
+}
