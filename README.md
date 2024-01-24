@@ -2,7 +2,7 @@
 Python util to transfer repos between GitHub usernames
 
 ## Setup
-- Switch to the virtual environment included
+- Setup your virtual environment, e.g. via https://code.visualstudio.com/docs/python/python-tutorial#_create-a-virtual-environment
 - Install requirements, i.e.
 
 ```
