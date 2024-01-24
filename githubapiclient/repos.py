@@ -1,6 +1,7 @@
 import json
 import requests
 
+# https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28#search-repositories
 def get_names(username, secret):
     r = requests.get(
         url=f'https://api.github.com/search/repositories?q=user:{username}',
@@ -19,6 +20,7 @@ def get_names(username, secret):
 
     return names
 
+# https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#transfer-a-repository
 def transfer(from_username, from_user_secret, repository_name, to_username):
     r = requests.post(
         url=f'https://api.github.com/repos/{from_username}/{repository_name}/transfer',
